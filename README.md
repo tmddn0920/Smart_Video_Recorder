@@ -32,3 +32,5 @@
 
 ### 🎥 녹화 중 (Recording)  
 ![Recording](Screenshots/Record.png)
+
+## output_example을 통해 예시 영상을 확인하세요!
