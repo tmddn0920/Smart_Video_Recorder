@@ -32,6 +32,3 @@
 
 ### 🎥 녹화 중 (Recording)  
 ![Recording](Screenshots/Record.png)
-
-## 🎬 녹화된 영상 예시  
-에시 영상은 Screenshots 폴더 내 output_Example 영상을 확인해주세요.
