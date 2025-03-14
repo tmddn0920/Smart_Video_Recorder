@@ -5,13 +5,21 @@ fourcc = cv2.VideoWriter_fourcc(*'avc1')
 out = cv2.VideoWriter('output.mp4', fourcc, 20.0, (640, 480))
 
 recording = False
+dark_mode = False
+flip_mode = False
     
 while True:
     ret, frame = cam.read()
     if not ret:
         break
     
-            
+    if flip_mode:
+        frame = cv2.flip(frame, 1)
+    
+    if dark_mode:
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
+    
     if recording:
         out.write(frame)
         cv2.circle(frame, (50, 50), 22, (0, 0, 0), -1)
@@ -26,6 +34,10 @@ while True:
         break
     elif key == 32:
         recording = not recording
+    elif key == ord('d'):  
+        dark_mode = not dark_mode
+    elif key == ord('f'): 
+        flip_mode = not flip_mode
 
 cam.release()
 out.release()
