@@ -1,8 +1,11 @@
 import cv2
 
 cam = cv2.VideoCapture(0)
-fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
+width = int(cam.get(cv2.CAP_PROP_FRAME_WIDTH))
+height = int(cam.get(cv2.CAP_PROP_FRAME_HEIGHT))
+fps = cam.get(cv2.CAP_PROP_FPS)
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')  
+out = cv2.VideoWriter('output.mp4', fourcc, fps, (width, height))
 
 recording = False
 dark_mode = False
