@@ -22,7 +22,7 @@
 ## 🖼️ 실행 예시  
 
 ### 📌 녹화 전 (Before Record)  
-![Before Record](Screenshots/Before_record.png)  
+![Before Record](Screenshots/Before_Record.png)  
 
 ### 🌑 다크 모드 (Dark Mode)  
 ![Dark Mode](Screenshots/Dark.png)  
@@ -34,4 +34,4 @@
 ![Recording](Screenshots/Record.png)
 
 ## 🎬 녹화된 영상 예시  
-[![output_Example](Screenshots/Before_record.png)](Screenshots/output_Example.mp4)
+에시 영상은 Screenshots 폴더 내 output_Example 영상을 확인해주세요.
